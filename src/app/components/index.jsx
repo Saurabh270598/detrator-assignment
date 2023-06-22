@@ -9,26 +9,24 @@ async function getData() {
 const PostScreen = async () => {
   const product = await getData();
   return (
-    <Fragment>
-      <div className="page-wrapper">
-        <span className="page-heading">Posts.js</span>
-        {product.map((item, index) => {
-          return (
-            // outer wrapper
-            <div className="outer-wrapper">
-              {/* inner containers */}
-              <img src={item.image} height={100} width={100} />
-              <div className="title-container">
-                {item.title}
-                <div className="description-container">{item.description}</div>
-              </div>
-
-              <div className="price-container">Rs {item.price}</div>
+    <div className="page-wrapper">
+      <span className="page-heading">Posts.js</span>
+      {product.map((item, index) => {
+        return (
+          // outer wrapper
+          <div className="outer-wrapper">
+            {/* inner containers */}
+            <img src={item.image} height={100} width={100} />
+            <div className="title-container">
+              {item.title}
+              <div className="description-container">{item.description}</div>
             </div>
-          );
-        })}
-      </div>
-    </Fragment>
+
+            <div className="price-container">Rs {item.price}</div>
+          </div>
+        );
+      })}
+    </div>
   );
 };
 

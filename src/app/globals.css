@@ -1,0 +1,46 @@
+.outer-wrapper {
+  display: flex;
+  gap: 10px;
+  border: 1px solid lightgray;
+  margin-bottom: 15px;
+  padding: 20px;
+  background-color: lightyellow;
+  width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 1px 1px 1px rgba(255, 255, 0, 0.5);
+}
+
+.title-container {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.description-container {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  width: 620px;
+  color: gray;
+}
+
+.price-container {
+  white-space: nowrap;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-heading {
+  font-size: 32px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  padding: 20px;
+}
